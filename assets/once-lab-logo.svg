@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ONCE LAB</title>
+    <g id="ONCE-LAB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" fill="#1FFF96" x="0" y="0" width="512" height="512" rx="159"></rect>
+        <rect id="矩形" fill="#FFFFFF" x="289" y="376" width="144" height="39"></rect>
+        <circle id="椭圆形" fill="#10E380" cx="413.5" cy="210.5" r="45.5"></circle>
+        <path d="M172,163 C223.362482,163 265,204.637518 265,256 C265,307.362482 223.362482,349 172,349 C120.637518,349 79,307.362482 79,256 C79,204.637518 120.637518,163 172,163 Z M172,211 C147.147186,211 127,231.147186 127,256 C127,280.852814 147.147186,301 172,301 C196.852814,301 217,280.852814 217,256 C217,231.147186 196.852814,211 172,211 Z" id="椭圆形" fill="#000000" fill-rule="nonzero"></path>
+        <polygon id="路径-2" fill="#000000" fill-rule="nonzero" points="337 163 337 298.656 433.08579 299.000153 432.91421 346.999847 289 346.485408 289 163"></polygon>
+    </g>
+</svg>
