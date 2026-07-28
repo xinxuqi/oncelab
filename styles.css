@@ -69,10 +69,25 @@ a { color: inherit; text-decoration: none; }
 .lang-opt:hover { color: var(--text); }
 .lang-opt.active { background: #fff; color: var(--accent); box-shadow: 0 1px 2px rgba(0,0,0,.08); }
 .lang-sep { color: var(--text-soft); font-size: 12px; user-select: none; }
-@media (max-width: 560px) {
-  .nav-links { gap: 18px; }
-  .lang-switch { margin-left: 10px; }
-  .lang-opt { padding: 3px 7px; }
+@media (max-width: 600px) {
+  /* 两行布局：第一行 品牌(左)+语言切换(右)；第二行 菜单三项 */
+  .nav-inner {
+    height: auto;
+    padding: 10px 18px 0;
+    flex-wrap: wrap;
+  }
+  .brand { order: 1; }
+  .lang-switch { order: 2; margin-left: auto; }
+  .lang-opt { padding: 3px 8px; }
+  .nav-links {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+    gap: 34px;
+    padding: 8px 0 10px;
+  }
+  .nav-links a { font-size: 15px; }
 }
 
 /* ---------- Layout ---------- */
