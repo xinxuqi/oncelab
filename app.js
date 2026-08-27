@@ -387,23 +387,23 @@ const PRODUCTS = [
     version: { zh: "v2.0.5", en: "v2.0.5" },
     start: "2026-08-13", end: "2026-08-26", status: "published", download: "",
     zh: {
-      tagline: "每天十个词 · 轻量背单词",
-      overview: "Lexi 是一个 macOS 原生背单词应用，遵循「每天十个词」的轻量节奏。你每天学习一小批单词，应用跟踪掌握度，用间隔重复把遗忘曲线拉平。词汇按词库组织，支持自定义词库，数据本地保存。它用 Swift / SwiftPM 构建，专注「少量、持续、不焦虑」的学习体验。",
-      features: ["每天十个词的轻量节奏", "掌握度跟踪与间隔重复", "词库组织，支持自定义词库", "本地数据保存，隐私优先", "macOS 原生（Swift / SwiftPM）", "菜单栏 / 小组件快速复习"],
+      tagline: "海量词库与例句 · 科学高效的英语学习",
+      overview: "Lexi 是一个 macOS 原生的英语学习应用，内置大量词库与例句，覆盖从基础到进阶的词汇。它以「账户」和「单词掌握情况」为核心优势：不同账户的进度独立保存，系统按单词粒度跟踪你的掌握程度，并据此智能安排复习。练习形式丰富，包含卡片、选择、填空、阅读等多种模式，配合科学的记忆与学习算法，帮助你扎实、高效地提升英语。",
+      features: ["海量词库与例句，覆盖各阶段词汇", "账户系统，多账户进度独立保存", "按单词粒度跟踪掌握情况，智能安排复习", "多种练习模式：卡片 / 选择 / 填空 / 阅读", "科学的记忆与学习算法", "macOS 原生（Swift / SwiftPM）"],
       versions: [
-        { v: "1.0.0", d: "2026-08-13", n: "首发：每日词表 + 掌握度跟踪。" },
-        { v: "2.0.0", d: "2026-08-20", n: "重构词库系统，支持自定义词库与间隔重复。" },
-        { v: "2.0.5", d: "2026-08-26", n: "当前版本：稳定性优化与 UI 打磨。" }
+        { v: "1.0.0", d: "2026-08-13", n: "首发：词库与例句 + 卡片、选择练习模式。" },
+        { v: "2.0.0", d: "2026-08-20", n: "新增账户系统与单词掌握跟踪，扩展填空、阅读模式。" },
+        { v: "2.0.5", d: "2026-08-26", n: "当前版本：多模式学习与掌握度调度优化。" }
       ]
     },
     en: {
-      tagline: "Ten words a day · light vocab",
-      overview: "Lexi is a native macOS vocabulary app built around a light rhythm: ten words a day. You study a small batch daily while the app tracks mastery and flattens the forgetting curve with spaced repetition. Words are organized into packs with custom packs supported, and everything is saved locally. Built with Swift / SwiftPM, it focuses on a small, steady, low-anxiety learning habit.",
-      features: ["Light rhythm of ten words a day", "Mastery tracking with spaced repetition", "Word packs, including custom packs", "Local data, privacy first", "Native macOS (Swift / SwiftPM)", "Menu-bar / widget quick review"],
+      tagline: "Vast word banks & example sentences · scientific English learning",
+      overview: "Lexi is a native macOS English-learning app with vast built-in word banks and example sentences spanning beginner to advanced vocabulary. Its core strengths are accounts and per-word mastery: each account's progress is saved independently, and the app tracks your mastery word by word to schedule review intelligently. Multiple practice modes—flashcards, multiple choice, fill-in-the-blank, reading and more—combined with a scientific memory and study algorithm help you build English solidly and efficiently.",
+      features: ["Vast word banks and example sentences across levels", "Account system with independent per-account progress", "Per-word mastery tracking that schedules review intelligently", "Multiple practice modes: flashcards / choice / fill-in / reading", "Scientific memory and study algorithm", "Native macOS (Swift / SwiftPM)"],
       versions: [
-        { v: "1.0.0", d: "2026-08-13", n: "First release: daily word list + mastery tracking." },
-        { v: "2.0.0", d: "2026-08-20", n: "Rebuilt pack system with custom packs and spaced repetition." },
-        { v: "2.0.5", d: "2026-08-26", n: "Current: stability tuning and UI polish." }
+        { v: "1.0.0", d: "2026-08-13", n: "First release: word banks & examples + flashcard and choice modes." },
+        { v: "2.0.0", d: "2026-08-20", n: "Added accounts and per-word mastery, plus fill-in and reading modes." },
+        { v: "2.0.5", d: "2026-08-26", n: "Current: multi-mode study and mastery-scheduling tuning." }
       ]
     }
   },
