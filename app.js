@@ -356,6 +356,213 @@ const PRODUCTS = [
         { v: "1.0", d: "2026-07-24", n: "Current: full matching gameplay and themed art, single-file release." }
       ]
     }
+  },
+  {
+    slug: "quickrename", name: "QuickRename", type: "macOS", icon: "quickrename.png",
+    version: { zh: "v0.7.0", en: "v0.7.0" },
+    start: "2026-08-11", end: "2026-08-25", status: "published", download: "",
+    zh: {
+      tagline: "菜单栏批量重命名工具",
+      overview: "QuickRename 是一个常驻菜单栏的批量重命名工具，面向需要把一批文件统一改成规范命名的场景。它把时间标记、序列号、前后缀、连接符等常用重命名要素拆成可视化模块，按规则拼成最终文件名，支持实时预览，避免误改。所有处理在本地完成，文件不出本机。",
+      features: ["时间标记（年 / 月 / 日 / 当前时间）合并成单行", "连接符选择器：- / 空格 / _ / 无，默认 -", "前缀 / 后缀单选，默认后缀，不可为空", "序列号智能解析：示例字符串推导起始序号与补零位数，步长可调", "重命名管理器保留前缀 / 后缀彩色标签便于区分", "Universal Binary，Intel 与 Apple 芯片原生运行"],
+      versions: [
+        { v: "0.3.1", d: "2026-08-11", n: "内测：基础前缀 / 后缀 + 序号重命名。" },
+        { v: "0.5.0", d: "2026-08-18", n: "新增时间标记模块与连接符选择器，支持实时预览。" },
+        { v: "0.7.0", d: "2026-08-25", n: "当前版本（build 11）：序列号智能解析、彩色标签、界面重构。" }
+      ]
+    },
+    en: {
+      tagline: "Menu-bar batch renamer",
+      overview: "QuickRename is a batch renaming utility that lives in your menu bar, built for turning a pile of files into consistently named ones. It breaks common renaming pieces—timestamps, sequence numbers, prefixes/suffixes, connectors—into visual modules that assemble into the final filename, with live preview so you never mis-rename. Everything runs locally; files never leave your Mac.",
+      features: ["Timestamp (year / month / day / time) merged into one line", "Connector picker: - / space / _ / none, default -", "Prefix / suffix radio, suffix by default, cannot be empty", "Smart sequence parsing: a sample string infers start number and zero-padding; step is adjustable", "Renamer keeps color-coded prefix / suffix labels for clarity", "Universal Binary, native on Intel and Apple silicon"],
+      versions: [
+        { v: "0.3.1", d: "2026-08-11", n: "Beta: basic prefix / suffix + sequence numbering." },
+        { v: "0.5.0", d: "2026-08-18", n: "Added timestamp module and connector picker with live preview." },
+        { v: "0.7.0", d: "2026-08-25", n: "Current (build 11): smart sequence parsing, color labels, UI rebuild." }
+      ]
+    }
+  },
+  {
+    slug: "lexi", name: "Lexi", type: "macOS", icon: "lexi.png",
+    version: { zh: "v2.0.5", en: "v2.0.5" },
+    start: "2026-08-13", end: "2026-08-26", status: "published", download: "",
+    zh: {
+      tagline: "每天十个词 · 轻量背单词",
+      overview: "Lexi 是一个 macOS 原生背单词应用，遵循「每天十个词」的轻量节奏。你每天学习一小批单词，应用跟踪掌握度，用间隔重复把遗忘曲线拉平。词汇按词库组织，支持自定义词库，数据本地保存。它用 Swift / SwiftPM 构建，专注「少量、持续、不焦虑」的学习体验。",
+      features: ["每天十个词的轻量节奏", "掌握度跟踪与间隔重复", "词库组织，支持自定义词库", "本地数据保存，隐私优先", "macOS 原生（Swift / SwiftPM）", "菜单栏 / 小组件快速复习"],
+      versions: [
+        { v: "1.0.0", d: "2026-08-13", n: "首发：每日词表 + 掌握度跟踪。" },
+        { v: "2.0.0", d: "2026-08-20", n: "重构词库系统，支持自定义词库与间隔重复。" },
+        { v: "2.0.5", d: "2026-08-26", n: "当前版本：稳定性优化与 UI 打磨。" }
+      ]
+    },
+    en: {
+      tagline: "Ten words a day · light vocab",
+      overview: "Lexi is a native macOS vocabulary app built around a light rhythm: ten words a day. You study a small batch daily while the app tracks mastery and flattens the forgetting curve with spaced repetition. Words are organized into packs with custom packs supported, and everything is saved locally. Built with Swift / SwiftPM, it focuses on a small, steady, low-anxiety learning habit.",
+      features: ["Light rhythm of ten words a day", "Mastery tracking with spaced repetition", "Word packs, including custom packs", "Local data, privacy first", "Native macOS (Swift / SwiftPM)", "Menu-bar / widget quick review"],
+      versions: [
+        { v: "1.0.0", d: "2026-08-13", n: "First release: daily word list + mastery tracking." },
+        { v: "2.0.0", d: "2026-08-20", n: "Rebuilt pack system with custom packs and spaced repetition." },
+        { v: "2.0.5", d: "2026-08-26", n: "Current: stability tuning and UI polish." }
+      ]
+    }
+  },
+  {
+    slug: "clippair", name: "ClipPair 句夹", type: "macOS", icon: "clippair.png",
+    version: { zh: "v0.3.9", en: "v0.3.9" },
+    start: "2026-08-22", end: "2026-08-23", status: "published", download: "",
+    zh: {
+      tagline: "剪贴板片段收集（公司出品）",
+      overview: "ClipPair 句夹是一个 macOS 原生剪贴板片段收集应用，帮助你把常用的句子、话术、片段随手收集、分类，并在需要时快速取用。它面向客服、销售与内容创作等高频文字复用场景，支持分组管理与一键粘贴，让重复文字不再手打。",
+      features: ["剪贴板片段收集与分类", "分组管理，快速检索", "一键粘贴到当前光标", "macOS 原生（Swift / AppKit）", "本地存储，隐私可控"],
+      versions: [
+        { v: "0.3.2", d: "2026-08-22", n: "git 基线版本。" },
+        { v: "0.3.9", d: "2026-08-23", n: "当前版本：交互与稳定性改进。" }
+      ]
+    },
+    en: {
+      tagline: "Clipboard snippet collector (by company)",
+      overview: "ClipPair is a native macOS clipboard snippet collector that lets you gather, organize and quickly reuse common phrases, scripts and fragments. Built for high-frequency text reuse in support, sales and content work, it offers grouped management and one-click paste so repeated text is never retyped.",
+      features: ["Collect and categorize clipboard snippets", "Grouped management with quick search", "One-click paste at the cursor", "Native macOS (Swift / AppKit)", "Local storage, privacy in your hands"],
+      versions: [
+        { v: "0.3.2", d: "2026-08-22", n: "Git baseline version." },
+        { v: "0.3.9", d: "2026-08-23", n: "Current: interaction and stability improvements." }
+      ]
+    }
+  },
+  {
+    slug: "pixelbros", name: "PixelBros", type: "macOS", icon: "pixelbros.png",
+    version: { zh: "v0.3.8", en: "v0.3.8" },
+    start: "2026-08-09", end: "2026-08-15", status: "published", download: "",
+    zh: {
+      tagline: "像素兄弟 · 超级马里奥风格平台跳跃",
+      overview: "PixelBros 是一个用 Swift / AppKit / Core Graphics 开发的超级马里奥风格平台跳跃游戏，逻辑分辨率 480×288。你操控角色在 3 个关卡 + BOSS 房中前进，躲避板栗仔 / 乌龟 / 云之人等小怪，挑战库巴 / 淋巴 / 泥巴怪 BOSS。支持局域网联机对战，每关藏有管道彩蛋。",
+      features: ["超级马里奥风格平台跳跃（D 右 / A 左 / Space 跳）", "3 关 + BOSS 房楼梯，支持组合跳", "小怪与 BOSS（板栗仔 / 乌龟 / 库巴等）", "局域网联机对战", "每关管道彩蛋（A→W→D→S 传送砍桥）", "已发布至 /Applications，Universal Binary"],
+      versions: [
+        { v: "0.1.0", d: "2026-08-09", n: "首发：单关平台跳跃与基础小怪。" },
+        { v: "0.3.0", d: "2026-08-13", n: "新增 BOSS 房与多关卡，局域网联机。" },
+        { v: "0.3.8", d: "2026-08-15", n: "当前版本：boss 平台修复，主菜单版本号同步。" }
+      ]
+    },
+    en: {
+      tagline: "Pixel Bros · Super-Mario-style platformer",
+      overview: "PixelBros is a Super-Mario-style platformer built with Swift / AppKit / Core Graphics at a 480×288 logical resolution. Guide your character through 3 levels plus a boss room, dodge foes like Goombas, turtles and cloud-people, and face bosses including Bowser, Lymph and Mud. Local co-op over LAN, with a pipe easter egg in every level.",
+      features: ["Super-Mario-style platforming (D right / A left / Space jump)", "3 levels + boss-room stairs, combo jumps", "Foes and bosses (Goomba / turtle / Bowser and more)", "Local co-op over LAN", "Pipe easter egg per level (A→W→D→S teleport to chop bridge)", "Published to /Applications, Universal Binary"],
+      versions: [
+        { v: "0.1.0", d: "2026-08-09", n: "First release: single level and basic foes." },
+        { v: "0.3.0", d: "2026-08-13", n: "Added boss room, multiple levels, LAN co-op." },
+        { v: "0.3.8", d: "2026-08-15", n: "Current: boss platform fix, menu version sync." }
+      ]
+    }
+  },
+  {
+    slug: "minesweeper", name: "Minesweeper", type: "macOS", icon: "minesweeper.png",
+    version: { zh: "v1.0.0", en: "v1.0.0" },
+    start: "2026-08-10", end: "2026-08-12", status: "published", download: "",
+    zh: {
+      tagline: "macOS 原生扫雷",
+      overview: "Minesweeper 是一个 macOS 原生扫雷游戏，用 Swift 构建，已发布到「应用程序」文件夹。它还原经典扫雷玩法：标记地雷、根据数字推理安全格，支持多难度与本地最佳成绩。纯本地、零依赖、打开即玩。",
+      features: ["经典扫雷玩法与多难度", "标记 / 数字推理", "本地最佳成绩记录", "macOS 原生（Swift），已发布 /Applications", "零依赖，打开即玩"],
+      versions: [
+        { v: "1.0.0", d: "2026-08-12", n: "当前版本：完整扫雷玩法，已发布至应用程序。" }
+      ]
+    },
+    en: {
+      tagline: "Native macOS Minesweeper",
+      overview: "Minesweeper is a native macOS minesweeper built with Swift and published to the Applications folder. It recreates the classic game—flag mines, reason about safe cells from the numbers—with multiple difficulties and local best scores. Fully local, zero dependencies, open and play.",
+      features: ["Classic minesweeper with difficulties", "Flagging / number reasoning", "Local best-score records", "Native macOS (Swift), in /Applications", "Zero dependencies, open and play"],
+      versions: [
+        { v: "1.0.0", d: "2026-08-12", n: "Current: full gameplay, published to Applications." }
+      ]
+    }
+  },
+  {
+    slug: "memocards", name: "MemoCards", type: "web", icon: "memocards.png",
+    version: { zh: "原型", en: "Prototype" },
+    start: "2026-08-18", end: "2026-08-27", status: "dev", download: "",
+    zh: {
+      tagline: "单词卡学习（Tinycards 精神续作）",
+      overview: "MemoCards 是经典闪卡学习应用 Tinycards（Duolingo 2016 推出、2020 关停）的精神续作原型。它沿用「卡片 + 小测验」的轻松学习方式，把词库与进度分离，逻辑与 UI 分离以便后续跨平台移植。当前为原型阶段，重点验证学习流程与数据模型。",
+      features: ["卡片 + 小测验的轻松学习", "词库与进度分离的数据模型", "逻辑与 UI 分离，便于跨平台移植", "纯前端，单文件可运行", "Tinycards 风格的交互体验"],
+      versions: [
+        { v: "0.1.0", d: "2026-08-27", n: "原型：核心学习流程与数据模型验证。" }
+      ]
+    },
+    en: {
+      tagline: "Flashcard study (Tinycards spiritual successor)",
+      overview: "MemoCards is a prototype spiritual successor to Tinycards—the flashcard app Duolingo launched in 2016 and shut down in 2020. It keeps the light 'card + quiz' learning style, separates word packs from progress, and keeps logic apart from UI for later cross-platform ports. Currently a prototype validating the learning flow and data model.",
+      features: ["Light learning with cards + quizzes", "Data model separating packs from progress", "Logic/UI separation for cross-platform ports", "Pure front-end, runs as a single file", "Tinycards-style interactions"],
+      versions: [
+        { v: "0.1.0", d: "2026-08-27", n: "Prototype: core learning flow and data model." }
+      ]
+    }
+  },
+  {
+    slug: "wordplay", name: "拼字乐园", type: "web", icon: "wordplay.png",
+    version: { zh: "v1.2.0", en: "v1.2.0" },
+    start: "2026-08-09", end: "2026-08-20", status: "published", download: "",
+    zh: {
+      tagline: "多模式单词游戏合集",
+      overview: "拼字乐园是一个纯前端多模式单词游戏合集，在经典找词（Boggle）基础上扩展出字母重排（Anagram）、单词猜测（Wordle）、线索猜词（Clue）、记忆（Memo）、棋盘（Board）等多种模式。内置上海中考 / 小学词库，采用逻辑与 UI 分离架构，单文件 HTML + localStorage，开箱即用。",
+      features: ["多模式：Boggle / Anagram / Wordle / Clue / Memo / Board", "内置上海中考 / 小学词库", "单文件 HTML + localStorage，开箱即用", "逻辑与 UI 分离，便于扩展", "多账号体系（掌握度按账户 × 单词隔离）"],
+      versions: [
+        { v: "1.0.0", d: "2026-08-09", n: "首发：Boggle 找词 + 内置词库。" },
+        { v: "1.1.0", d: "2026-08-15", n: "新增 Anagram / Wordle / Clue 等模式。" },
+        { v: "1.2.0", d: "2026-08-20", n: "当前版本：多账号体系与 Board 模式。" }
+      ]
+    },
+    en: {
+      tagline: "Multi-mode word game collection",
+      overview: "WordPlay is a pure front-end collection of word games. On top of classic word-finding (Boggle) it adds anagram, Wordle-style guessing, clue guessing, memory and board modes. It ships with Shanghai middle-school / primary word lists, uses a logic/UI-separated architecture, and runs as a single-file HTML with localStorage—ready out of the box.",
+      features: ["Modes: Boggle / Anagram / Wordle / Clue / Memo / Board", "Built-in Shanghai exam / primary word lists", "Single-file HTML + localStorage, ready to use", "Logic/UI separation for easy extension", "Multi-account (mastery isolated per account × word)"],
+      versions: [
+        { v: "1.0.0", d: "2026-08-09", n: "First release: Boggle + built-in word lists." },
+        { v: "1.1.0", d: "2026-08-15", n: "Added Anagram / Wordle / Clue modes." },
+        { v: "1.2.0", d: "2026-08-20", n: "Current: multi-account system and Board mode." }
+      ]
+    }
+  },
+  {
+    slug: "spider-solitaire", name: "Spider Solitaire", type: "web", icon: "spider-solitaire.png",
+    version: { zh: "v1.0.0", en: "v1.0.0" },
+    start: "2026-08-08", end: "2026-08-09", status: "published", download: "",
+    zh: {
+      tagline: "蜘蛛纸牌 · 单文件网页",
+      overview: "Spider Solitaire 是一个仿 Windows 风格的蜘蛛纸牌网页游戏，单文件 HTML + localStorage，开箱即玩。它适配各种屏幕尺寸，发牌按钮等关键控件始终可见，主菜单含开始 / 花色设置 / 退出。纯前端、无需联网。",
+      features: ["仿 Windows 风格蜘蛛纸牌", "单文件 HTML + localStorage", "全屏适配，控件常驻可见", "开始 / 花色设置 / 退出主菜单", "纯前端，无需联网"],
+      versions: [
+        { v: "1.0.0", d: "2026-08-08", n: "当前版本：完整蜘蛛纸牌玩法，单文件发布。" }
+      ]
+    },
+    en: {
+      tagline: "Spider Solitaire · single-file web",
+      overview: "Spider Solitaire is a Windows-style spider solitaire as a single-file web game with localStorage—ready to play. It adapts to any screen size, keeps key controls like the deal button always visible, and has a main menu with Start / Suit settings / Quit. Pure front-end, no internet needed.",
+      features: ["Windows-style spider solitaire", "Single-file HTML + localStorage", "Full-screen fit, controls always visible", "Main menu: Start / Suit settings / Quit", "Pure front-end, no internet needed"],
+      versions: [
+        { v: "1.0.0", d: "2026-08-08", n: "Current: full gameplay, single-file release." }
+      ]
+    }
+  },
+  {
+    slug: "points24", name: "24 Point", type: "web", icon: "points24.png",
+    version: { zh: "v1.0.0", en: "v1.0.0" },
+    start: "2026-08-09", end: "2026-08-10", status: "published", download: "",
+    zh: {
+      tagline: "24点算数小游戏",
+      overview: "24点是一个经典算数小游戏：用四个数字与加减乘除，凑出结果 24。它以纯前端单文件实现，打开即玩，适合在碎片时间锻炼心算。支持出题、计时与历史记录（本地保存）。",
+      features: ["经典 24 点算数玩法", "单文件网页，打开即玩", "出题 / 计时 / 本地历史", "纯前端，无需联网", "碎片时间心算训练"],
+      versions: [
+        { v: "1.0.0", d: "2026-08-09", n: "当前版本：完整 24 点玩法，单文件发布。" }
+      ]
+    },
+    en: {
+      tagline: "24 Point arithmetic game",
+      overview: "24 Point is a classic arithmetic puzzle: use four numbers and + − × ÷ to make 24. Implemented as a single-file front-end game, it opens and plays instantly—great for mental-math practice in spare moments. Supports generating puzzles, timing and local history.",
+      features: ["Classic 24-point arithmetic", "Single-file web, open and play", "Puzzle generation / timer / local history", "Pure front-end, no internet needed", "Mental-math training in spare moments"],
+      versions: [
+        { v: "1.0.0", d: "2026-08-09", n: "Current: full gameplay, single-file release." }
+      ]
+    }
   }
 ];
 
